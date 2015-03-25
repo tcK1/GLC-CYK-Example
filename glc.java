@@ -1,6 +1,6 @@
-/* Turma 94						          	*/
+/* Turma 94				*/
 /* 8516048 - Kaic Nunes Bastidas	*/
-/* 8598610 - Djean Axt  		    	*/
+/* 8598610 - Djean Axt  		*/
 
 import java.io.*;
 import java.util.*;
