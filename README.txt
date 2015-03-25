@@ -67,12 +67,12 @@ EX.:
 (Seguindo a especificação e as cadeias dos exemplos acima)
 
 3
-& 						<-- Para cadeia vazia, nã se imprime a matriz de variaveis
-a 						<-- Segunda cadeia
+&                       <-- Para cadeia vazia, nã se imprime a matriz de variaveis
+a                       <-- Segunda cadeia
 1 1 A
-a b a a b b 	        <-- Terceira cadeia
-1 1 					<-- Cada linha corresponde a uma posição (i,j) da matriz
-1 2 S0 S 			    <-- Separação por espacos
+a b a a b b             <-- Terceira cadeia
+1 1                     <-- Cada linha corresponde a uma posição (i,j) da matriz
+1 2 S0 S
 1 3 U
 1 4
 1 5
