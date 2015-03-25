@@ -59,7 +59,6 @@ EX.:
 1 0 1
 
 Já o segundo arquivo contém uma série de tabelas criadas pelo algoritimo CYK, um para cada cadeia apresentada, e contem a seguinte extrutura:
-
 1.	Na primeira linha a quantidade de cadeias analisadas.
 2.	Na segunda linha em diante, aparecera a cadeia analisada e em baixo a tabela gerada pelo algoritmo.
 
@@ -71,9 +70,9 @@ EX.:
 & 						<-- Para cadeia vazia, nã se imprime a matriz de variaveis
 a 						<-- Segunda cadeia
 1 1 A
-a b a a b b 	<-- Terceira cadeia
+a b a a b b 	        <-- Terceira cadeia
 1 1 					<-- Cada linha corresponde a uma posição (i,j) da matriz
-1 2 S0 S 			<-- Separação por espacos
+1 2 S0 S 			    <-- Separação por espacos
 1 3 U
 1 4
 1 5
