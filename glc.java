@@ -135,18 +135,18 @@ class glc{
 
 			/* ESCREVENDO "out-status.txt" */
 		}
-      	catch (IOException ex){
-         	ex.printStackTrace();
-      	}	
+      		catch (IOException ex){
+         		ex.printStackTrace();
+      		}	
 	}
 
 	@SuppressWarnings("unchecked")
 	public static boolean cyk(String[] entrada){
-      	ArrayList<String>[][] tabelaRespostas; /* Instanciando matriz final de resposta */
+      		ArrayList<String>[][] tabelaRespostas; /* Instanciando matriz final de resposta */
 
-      	/* Tamanho da cadeia sendo avaliada */
+      		/* Tamanho da cadeia sendo avaliada */
 
-      	int tamanhoCadeia = 0;
+      		int tamanhoCadeia = 0;
 		for (int i = 0; i <= entrada.length-1; i++) {
 		 	tamanhoCadeia++;
 		}
@@ -196,22 +196,22 @@ class glc{
    			}
 
 	   		for (int l = 1; l <= tamanhoCadeia; l++){
-    	   		for (int i = 0; i <= tamanhoCadeia - l; i++){
-        			int j = i + l - 1;
-        			for (int k = i; k <= j - 1; k++){
-        	   			Set<String> chaves = gramatica.keySet();
-           				for (String chaveAtual : chaves){
-           					String[] palavra = gramatica.get(chaveAtual);
+    	   			for (int i = 0; i <= tamanhoCadeia - l; i++){
+        				int j = i + l - 1;
+        				for (int k = i; k <= j - 1; k++){
+        	   				Set<String> chaves = gramatica.keySet();
+           					for (String chaveAtual : chaves){
+           						String[] palavra = gramatica.get(chaveAtual);
 							for(int corredor = 0; corredor <= palavra.length-1; corredor++){
-   		        				String[] partes = palavra[corredor].split(" ");
-           		   				if (tabelaRespostas[i][k].contains(partes[0]) && tabelaRespostas[k + 1][j].contains(partes[1])){
-	              					if(tabelaRespostas[i][j].contains(chaveAtual)) break; /* Caso ja exista nao insere novamente */
-	              					tabelaRespostas[i][j].add(chaveAtual);
-    	          				}
-            	  			}
-              			}
-        			}
-       			}
+   		        					String[] partes = palavra[corredor].split(" ");
+           		   					if (tabelaRespostas[i][k].contains(partes[0]) && tabelaRespostas[k + 1][j].contains(partes[1])){
+	              							if(tabelaRespostas[i][j].contains(chaveAtual)) break; /* Caso ja exista nao insere novamente */
+	              							tabelaRespostas[i][j].add(chaveAtual);
+    	          						}
+            	  					}
+              					}
+        				}
+       				}
    			}
 			
 			/* -----	Preenchendo a tabela 	----- */
@@ -222,11 +222,11 @@ class glc{
    				return true; /* Caso no canto superior direito da tabela exista a "variavelInicial" previamente declarada, a cadeia foi aceita */
    			}
 			return false; /* Caso nao, a cadeia foi rejeitada */
-    	}
+    		}
 
-    	/* 	FIM DO CODIGO CASO A CADEIA NAO SEJA VAZIA */
+    		/* 	FIM DO CODIGO CASO A CADEIA NAO SEJA VAZIA */
 
-    	return false;
+    		return false;
 	}
 
 	public static void escreveTabela(ArrayList<String>[][] tabelaRespostas, String[] entrada, int tamanhoCadeia){
@@ -265,7 +265,7 @@ class glc{
 			pw.close();
 
 		}catch (IOException ex){
-         	ex.printStackTrace();
-      	}
+        	 	ex.printStackTrace();
+      		}
 	}
 }
