@@ -1,4 +1,4 @@
-# EP-ITC-2014
+# EP-ITC-2014 - [Enunciado](http://www.each.usp.br/lauretto/ACH2043_2014/ep1-glc.pdf)
 
 Cógido de Leitura e Interpretação de Cadeias em função de uma Linguagem.
 
